@@ -4,7 +4,7 @@ import sys
 def IsSelfComplimentary(string):
     seq_dict = {"A":"T", "T":"A", "G":"C", "C":"G"}
 
-    #revComp = "".join(seq_dict[s] for s in string.upper()[::-1])
+    revComp = "".join(seq_dict[s] for s in string.upper()[::-1])
 
     if revComp == string.upper():
         print "The sequence is self complementary"
